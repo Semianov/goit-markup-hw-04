@@ -163,15 +163,7 @@ header {
   padding-left: 0px;
   padding-right: 0px;
 }
-/* .picture-item {
-  width: 270px;
 
-  background-color: #f5f4fa;
-  height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
 .decor-item::before {
   content: '';
   display: block;
@@ -369,7 +361,29 @@ header {
   padding-bottom: 24px;
   background-color: #ffffff;
 }
+.sprite-link {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+}
+.sprite-link .sprite-team:hover {
+  fill: #ffffff;
+  background: #2196f3;
+  border-radius: 50%;
+  cursor: pointer;
+}
 
+.sprite-team {
+  padding-bottom: 0px;
+  fill: #afb1b8;
+  margin-right: 10px;
+}
+.icon-link-team {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
 /* Наша команда конец */
 
 /* Постояннные клиенты */
@@ -435,9 +449,7 @@ footer {
   padding-top: 60px;
   padding-bottom: 20px;
 }
-.flex-join {
-  display: flex;
-}
+
 .footer-mail {
   display: block;
   color: rgba(255, 255, 255, 0.6);
@@ -481,6 +493,36 @@ footer {
 }
 .whitelogo {
   color: #ffffff;
+}
+.footer-icon {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.flex-join {
+  display: flex;
+  padding-left: 0px;
+  margin-top: 0px;
+}
+
+.footer-link {
+  display: inline-block;
+  fill: #ffffff;
+  margin-right: 10px;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
+}
+.sprite-footer-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-link:hover {
+  background: #2196f3;
+  cursor: pointer;
+  border-radius: 50px;
 }
 /* Футер конец */
 /* Футер кнопки */
@@ -791,6 +833,7 @@ footer {
   font-family: 'Roboto';
   font-style: normal;
 }
+
 .mailing h2 {
   font-size: 14px;
   color: #ffffff;
