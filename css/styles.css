@@ -366,14 +366,19 @@ header {
   width: 44px;
   height: 44px;
   border-radius: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sprite-link:hover {
+  background: #2196f3;
+
+  cursor: pointer;
 }
 .sprite-link .sprite-team:hover {
   fill: #ffffff;
-  background: #2196f3;
-  border-radius: 50%;
-  cursor: pointer;
 }
-
 .sprite-team {
   padding-bottom: 0px;
   fill: #afb1b8;
@@ -499,6 +504,7 @@ footer {
   align-items: flex-start;
   justify-content: flex-start;
 }
+/* ПРИСОЕДИНЯЙТЕСЬ */
 .flex-join {
   display: flex;
   padding-left: 0px;
@@ -506,23 +512,22 @@ footer {
 }
 
 .footer-link {
-  display: inline-block;
   fill: #ffffff;
   margin-right: 10px;
   border-radius: 50px;
   background: rgba(255, 255, 255, 0.1);
   width: 44px;
   height: 44px;
-}
-.sprite-footer-icon {
+
+  display: inline-block;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .footer-link:hover {
   background: #2196f3;
   cursor: pointer;
-  border-radius: 50px;
 }
 /* Футер конец */
 /* Футер кнопки */
