@@ -376,13 +376,13 @@ header {
 
   cursor: pointer;
 }
-.sprite-link .sprite-team:hover {
+
+.sprite-link:hover svg {
   fill: #ffffff;
 }
 .sprite-team {
   padding-bottom: 0px;
   fill: #afb1b8;
-  margin-right: 10px;
 }
 .icon-link-team {
   align-items: center;
@@ -419,10 +419,19 @@ header {
   display: flex;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
+
   border-radius: 4px;
   margin-right: 30px;
   align-items: center;
   justify-content: center;
+}
+.link-client {
+  fill: #afb1b8;
+}
+
+.logo-client:hover svg {
+  fill: #2196f3;
+  cursor: pointer;
 }
 
 /* Постоянные клиенты конец */
