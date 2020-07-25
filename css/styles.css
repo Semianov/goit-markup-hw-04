@@ -66,6 +66,9 @@ header {
   display: flex;
   margin-left: auto;
 }
+.header-sprite {
+  display: flex;
+}
 .header-color-link .link + .link {
   margin-left: 50px;
 }
@@ -79,6 +82,7 @@ header {
   align-items: center;
   justify-content: space-between;
 }
+
 .header-color-link > .link {
   font-family: 'Roboto';
   font-style: normal;
@@ -86,7 +90,28 @@ header {
   font-size: 14px;
   color: #757575;
 }
-.header-color-link .link:hover {
+.list-flex-link {
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content-header {
+  display: inline-block;
+  display: flex;
+}
+.content-header .list-flex-link + .list-flex-link {
+  margin-left: 30px;
+}
+.header-sprite {
+  fill: #757575;
+  margin-right: 10px;
+}
+.list-flex-link:hover svg {
+  fill: #2196f3;
+  cursor: pointer;
+}
+/* .header-color-link .link:hover {
   color: #2196f3;
 }
 .header-color-link .mail::before {
@@ -96,7 +121,7 @@ header {
 .phone::before {
   content: url('../images1/tel.svg');
   margin-right: 10px;
-}
+} */
 .bluelogo {
   color: #2196f3;
 }
@@ -496,8 +521,16 @@ footer {
   justify-content: space-between;
   align-items: baseline;
 }
-
+/* Подпишитесь на рассылку */
 .btn-footer {
+  display: flex;
+  margin: 0px;
+  width: 200px;
+  height: 50px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+
   padding-left: 29px;
   padding-right: 62px;
   padding-top: 10px;
@@ -505,6 +538,14 @@ footer {
   font-size: 16px;
   color: #ffffff;
 }
+.btn-footer::after {
+  content: url(../images1/iconsend.png);
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+
+/* Подпишитесь на рассылку */
 .whitelogo {
   color: #ffffff;
 }
@@ -539,20 +580,7 @@ footer {
   cursor: pointer;
 }
 /* Футер конец */
-/* Футер кнопки */
-.mailing input {
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-sizing: border-box;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  background: #2f303a;
-}
-.mailing button {
-  background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-}
-/* Футер кнопки конец */
+
 /* Блочный стиль/Flex */
 
 button {
@@ -636,6 +664,7 @@ header {
   font-size: 14px;
   font-weight: 500;
 }
+
 .header-color-link {
   display: flex;
   margin-left: auto;
@@ -678,6 +707,7 @@ header {
 .blacklogo {
   color: black;
 }
+
 /* Хедер конец*/
 
 /* Герой */
