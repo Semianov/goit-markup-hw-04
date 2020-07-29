@@ -32,10 +32,13 @@ ul {
 }
 
 /* Хедер */
-header {
+.header {
   background: #ffffff;
   padding-top: 24px;
   padding-bottom: 24px;
+
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .logotip {
   width: 153px;
@@ -66,8 +69,9 @@ header {
   display: flex;
   margin-left: auto;
 }
-.header-sprite {
+.list-flex-link .header-sprite use {
   display: flex;
+  display: inline-block;
 }
 .header-color-link .link + .link {
   margin-left: 50px;
@@ -81,6 +85,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 0px;
 }
 
 .header-color-link > .link {
@@ -91,14 +96,18 @@ header {
   color: #757575;
 }
 .list-flex-link {
-  display: inline-block;
+  /*  */
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 0px;
 }
 .content-header {
   display: inline-block;
   display: flex;
+
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .content-header .list-flex-link + .list-flex-link {
   margin-left: 30px;
@@ -106,22 +115,14 @@ header {
 .header-sprite {
   fill: #757575;
   margin-right: 10px;
+  height: 13px;
+  padding-top: 0px;
 }
 .list-flex-link:hover svg {
   fill: #2196f3;
   cursor: pointer;
 }
-/* .header-color-link .link:hover {
-  color: #2196f3;
-}
-.header-color-link .mail::before {
-  content: url('../images1/envelope\(hover\).svg');
-  margin-right: 10px;
-}
-.phone::before {
-  content: url('../images1/tel.svg');
-  margin-right: 10px;
-} */
+
 .bluelogo {
   color: #2196f3;
 }
@@ -139,6 +140,7 @@ header {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
+  margin-top: 0px;
 
   font-weight: 900;
   font-size: 44px;
@@ -188,43 +190,35 @@ header {
   padding-left: 0px;
   padding-right: 0px;
 }
+.sputnik {
+  width: 65px;
+  height: 70px;
+}
 
-.decor-item::before {
-  content: '';
+.clock {
+  width: 65px;
+  height: 70px;
+}
+
+.pc {
+  width: 70px;
+  height: 55px;
+}
+
+.sprite-advantage {
+  width: 270px;
+  height: 120px;
   display: block;
   background: #f5f4fa;
-  background-image: url('../images1/Vector.png');
-  height: 120px;
-  background-repeat: no-repeat;
-  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.decor-item:nth-of-type(2)::before {
-  content: '';
-  display: block;
-  background: #f5f4fa;
-  background-image: url('../images1/vector\(1\).png');
-  height: 120px;
-  background-repeat: no-repeat;
-  background-position: center;
+.astronaut1 {
+  width: 55px;
+  height: 60px;
 }
-.decor-item:nth-of-type(3)::before {
-  content: '';
-  display: block;
-  background: #f5f4fa;
-  background-image: url('../images1/vector\(2\).png');
-  height: 120px;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.decor-item:nth-of-type(4)::before {
-  content: '';
-  display: block;
-  background: #f5f4fa;
-  background-image: url('../images1/vector\(4\).png');
-  height: 120px;
-  background-repeat: no-repeat;
-  background-position: center;
-}
+
 .container-advantage h3 {
   color: #212121;
   width: 270px;
@@ -248,7 +242,7 @@ header {
 .container-advantage {
   display: flex;
 }
-.container-advantage li {
+.container-advantage .decor-item {
   margin-right: 30px;
   width: 270px;
 }
@@ -271,6 +265,7 @@ header {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 0px;
   line-height: 42px;
 }
 
@@ -333,9 +328,12 @@ header {
   font-size: 36px;
   font-weight: bold;
   width: 264px;
+
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
+  margin-top: 0px;
+
   line-height: 42px;
   text-align: center;
 
@@ -431,7 +429,7 @@ header {
   font-size: 36px;
   line-height: 42px;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 0px;
 }
 .logo-company {
   display: flex;
@@ -458,6 +456,9 @@ header {
   fill: #2196f3;
   cursor: pointer;
 }
+.logo-client:hover {
+  border: 1px solid #2196f3;
+}
 
 /* Постоянные клиенты конец */
 
@@ -474,9 +475,10 @@ footer {
   padding-bottom: 20px;
   font-weight: bold;
 }
-.kiev {
+.adr {
   color: #ffffff;
 }
+
 .logo-kiev {
   display: block;
   padding-top: 60px;
@@ -493,6 +495,7 @@ footer {
   display: block;
   color: rgba(255, 255, 255, 0.6);
   margin-bottom: 9px;
+  margin-top: 9px;
 }
 .footer-tel {
   display: block;
@@ -711,6 +714,8 @@ header {
 /* Хедер конец*/
 
 /* Герой */
+
+/* Navigator */
 .heroi {
   padding-top: 93px;
   padding-bottom: 94px;
@@ -754,6 +759,8 @@ header {
   text-align: center;
   color: #212121;
   background: #f5f4fa;
+
+  box-shadow: none;
 }
 .one {
   width: 73px;
@@ -773,7 +780,7 @@ header {
 .section-nav .button-nav:last-child {
   margin-right: 0px;
 }
-
+/* Navigator end */
 .heroi-picture {
   display: flex;
   flex-wrap: wrap;
