@@ -96,7 +96,6 @@ ul {
   color: #757575;
 }
 .list-flex-link {
-  /*  */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -160,7 +159,6 @@ ul {
     ),
     url('../images1/headerimg.jpg');
 
-  width: 1600px;
   background-size: cover;
   background-position: center;
   height: 600px;
